@@ -1,0 +1,58 @@
+#backgroundimage
+{
+   height: 10%;
+   left: 0;
+   margin: 0;
+   min-height: 100%;
+   min-width: 674px;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
+}
+
+#city-location .btn {
+  background-color: #fee300 !important;
+  color: #333333 !important;
+  font-weight: bold !important;
+  border: #fee300 !important;
+}
+
+#city-location .arrow {
+    cursor: pointer;
+    padding-top: 0.9em;
+    width: 35%;
+    vertical-align: bottom;
+    float: right;
+}
+
+#city-location .text1 {
+    color: #21ade7;
+    font-weight: bold;
+  font-size: 4em;
+}
+
+#city-location .text2 {
+  font-weight: bold;
+  font-size: 4em;
+  color: #333333;
+}
+
+#city-location .back-block span {
+    float: right;
+    vertical-align: middle;
+    display: inline-block;
+    font: 2.5em bold;
+}
+
+#city-location .back-block img {
+    float: right;
+    display: inline-block;
+    width: 2.9em;
+    cursor: pointer;
+}
+
+#city-location .cursor {
+    cursor: pointer !important;
+}

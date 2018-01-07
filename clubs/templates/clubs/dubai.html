@@ -1,0 +1,68 @@
+<html>
+{%load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>brochure_vue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="{% static 'clubs/css/style_dubai.css'  %}"/>
+  </head>
+
+<div id="city-location">
+  <img id="backgroundimage" src="{% static 'clubs/imgs/city_location/bg.png' %}" width=100% height=100%>
+    <div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-12">
+        <div class="col-md-12">
+            <h1 class="text1">Dubai</h1>
+            <h1 class="text2">Locations</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <table class="table">
+                        <tbody>
+                            <tr ng-click="club()" class="cursor">
+                                <td><router-link to="/AlBarshaClub"> <h3 class="text-muted">Ibn Battuta Gate - Mixed Club</h3></router-link></td>
+                                <td><img class="img-responsive arrow hidden-xs" src="../assets/city_location/arrow.png" /></td>
+                                <td><img class="img-responsive visible-xs" src="{% static 'clubs/imgs/city_location/arrow.png' %}" /></td>
+                            </tr>
+                            <tr ng-click="club()" class="cursor">
+                                <td><router-link to="/AlBarshaClub"><h3 class="text-muted">Reef Mall - Mixed Club</h3></router-link></td>
+                                <td><img class="img-responsive arrow hidden-xs" src="../assets/city_location/arrow.png" /></td>
+                                <td><img class="img-responsive visible-xs" src="{% static 'clubs/imgs/city_location/arrow.png' %}" /></td>
+                            </tr>
+                            <tr ng-click="club()" class="cursor">
+                                <td><router-link to="/AlBarshaClub"><h3 class="text-muted">Business Village Deira - Mixed Club</h3></router-link></td>
+                                <td><img class="img-responsive arrow hidden-xs" src="../assets/city_location/arrow.png" /></td>
+                                <td><img class="img-responsive visible-xs" src="{% static 'clubs/imgs/city_location/arrow.png' %}" /></td>
+                            </tr>
+                            <tr ng-click="club()" class="cursor">
+                                <td><router-link to="/AlBarshaClub"><h3 class="text-muted">Business Village Deira - Ladies Club</h3></router-link></td>
+                                <td><img class="img-responsive arrow hidden-xs" src="../assets/city_location/arrow.png" /></td>
+                                <td><img class="img-responsive visible-xs" src="{% static 'clubs/imgs/city_location/arrow.png' %}" /></td>
+                            </tr>
+                            <tr ng-click="club()" class="cursor">
+                                <td><router-link to="/AlBarshaClub"><h3 class="text-muted">Al Barsha - Mixed Club</h3></router-link></td>
+                                <td><img class="img-responsive arrow hidden-xs" src="../assets/city_location/arrow.png" /></td>
+                                <td><img class="img-responsive visible-xs" src="{% static 'clubs/imgs/city_location/arrow.png' %}" /></td>
+                            </tr>
+                            <tr ng-click="club()" class="cursor">
+                                <td><router-link to="/AlBarshaClub"><h3 class="text-muted">Al Barsha - Ladies Club</h3></router-link></td>
+                                <td><img class="img-responsive arrow hidden-xs" src="../assets/city_location/arrow.png" /></td>
+                                <td><img class="img-responsive visible-xs" src="{% static 'clubs/imgs/city_location/arrow.png' %}" /></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+               <div class="col-md-12 back-block">
+                    <div class="col-md-3 col-sm-3 col-xs-12 pull-right">
+                        <span>Back</span><router-link to="/Locations"><img ng-click="locations()" class="img-responsive" src="{% static 'clubs/imgs/city_location/back.png' %}" /></router-link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

@@ -1,0 +1,63 @@
+<html>
+{%load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>brochure_vue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="{% static 'clubs/css/style_locations.css'  %}"/>
+  </head>
+
+
+
+<div id="location">
+  <img id="backgroundimage" src="{% static 'clubs/imgs/location/bg.png' %}" width=100% height=100%>
+    <div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 hidden-xs">
+                <h1 class="text1">CLUB</h1>
+                <h1 class="text2">LOCATIONS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-md hidden-lg">
+                <h1 class="text1xs">CLUB</h1>
+                <h1 class="text2xs">LOCATIONS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 colxs-12">
+                <router-link to="/Dubai"><button class="btn btn-lg btn-block locationBtnSpace btn-primary" ><a href="/clubs/dubai" > Dubai </a></button></router-link>
+            </div>
+            <div class="col-md-4 col-sm-4 colxs-12">
+                <router-link to="/AbuDhabi"><button class="btn btn-lg btn-block locationBtnSpace btn-primary" >ABU DHABI</button></router-link>
+            </div>
+            <div class="col-md-4 col-sm-4 colxs-12">
+                <router-link to="/Fujairah"><button class="btn btn-lg btn-block locationBtnSpace btn-primary" >Fujairah</button></router-link>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <router-link to="/AlAin"><button class="btn btn-lg btn-block locationBtnSpace btn-primary" >AL AIN</button></router-link>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <router-link to="/RAK"><button class="btn btn-lg btn-block locationBtnSpace btn-primary" >RAK</button></router-link>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <router-link to="/Oman"><button class="btn btn-lg btn-block locationBtnSpace btn-primary" >OMAN</button></router-link>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <button class="btn btn-lg btn-blue btn-block btn-primary" >MIXED CLUB</button>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <button class="btn btn-lg btn-blue btn-block btn-primary">LADIES ONLY</button>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
