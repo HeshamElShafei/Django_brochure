@@ -22,7 +22,7 @@ STATIC_URL = '/clubs/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'clubs/static'),
+    os.path.join(BASE_DIR, 'clubs/static'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
@@ -31,12 +31,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'nh-7l7h1an(!yi8ykq#$2s*(7o=7wb2kce55)uck)osv2w7^zj'
-DEBUG = config('DEBUG', default=False, cast=bool)
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
-}
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -132,4 +127,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/clubs/static/'
+STATIC_URL = '/static/'
