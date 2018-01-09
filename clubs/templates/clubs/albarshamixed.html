@@ -1,0 +1,245 @@
+<html>
+{%load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>brochure_vue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="{% static 'clubs/css/style_albarshamixed.css'  %}"/>
+  </head>
+
+<div id="club">
+<img id="backgroundimage" src="{% static 'clubs/imgs/city_location/bg.png' %}" width=100% height=100%>
+  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+    <div class="row space">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <h1 class="club_name">AL BARSHA MALL</h1>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-3 col-sm-12 col-xs-6">
+          <img class="img-responsive visible-xs visible-sm" ng-click="clubGallery()" src="{% static 'clubs/imgs/icons/images.png' %}" />
+          <img class="img-responsive gallery hidden-xs hidden-sm" ng-click="clubGallery()" src="{% static 'clubs/imgs/icons/images.png' %}" />
+        </div>
+        <div class="col-md-9 col-sm-12 col-xs-6">
+           <button class="btn btn-primary btn-md btn-blue pull-right" ng-click="membership()"><b><a href="/clubs/dubai/albarshamixed/membership">START JOURNEY</a></b></button>
+        </div>
+      </div>
+    </div>
+    <div class="row space">
+      <div class="col-md-12 col-sm-12 col-xs12">
+        <p class="text-muted">Gold's Gym Al Barsha Mall is the first club to offer a cutting-edge, complete digital solutions 
+        to its members. Powered by TechnoGym, our members will be able to leverage cloud technology to track thier progress,
+        maximize workouts, book classes, and access a library of training programs.
+        </p>
+      </div>
+    </div>
+    <hr class="style" />
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h2>FACILITIES FEATURES</h2>
+      </div>
+    </div>
+    <div class="row space">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div uib-carousel class="carousel" active="featuresSlides.active" interval="myInterval" no-wrap="noWrapSlides">
+          <div uib-slide index="0">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/digital_solutions.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Complete Digital Fitness Solution</p> 
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/mixed_gym.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Mixed Gym</p> 
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/ladies_only.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Ladies only facility</p>  
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/shower_room.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Shower Room</p> 
+            </div>
+          </div>
+          <div uib-slide index="1">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/locker_access.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Locker Access</p> 
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/free_weights.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Free Weights</p>  
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/cardio_area.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Cardio Area</p> 
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/cycle_studio.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Cycle Studio</p>  
+            </div>
+          </div>
+          <div uib-slide index="2">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/group_exercise.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Group Exercise Studio</p> 
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/boxing_mma.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Boxing / MMA</p>  
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/sauna_room.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Sauna</p> 
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/juice_bar.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Juice Bar</p> 
+            </div>
+          </div>
+          <div uib-slide index="3">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/unlimited_gx_classes.png' style="margin:auto;">
+              <p class="text-muted text-center">Unlimited GX Classes</p>  
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img class="img-responsive" src="{% static 'clubs/imgs/icons/personal_training.png' %}" style="margin:auto;">
+              <p class="text-muted text-center">Personal Training</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="style" />
+    <div class="row space">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div uib-carousel class="carousel" active="membershipSlides.active" interval="myInterval" no-wrap="noWrapSlides">
+          <div uib-slide class="cursor" ng-click="showContent(0)" index="0">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <div class="round">
+                <img class="img-responsive" src="{% static 'clubs/imgs/icons/unlimited_gx_classes.png' %}" />
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+              <div class="round-image-text">
+                <h3 class="text-muted">UNLIMITIED GROUP EXERCISE CLASS</h3>
+                <p class="text-muted">Choose from over 40 different Group Exercise Classes that includes, Zumba, Les Mills, RPM, yoga
+                  , My Perfect Shape, Pilates and More. 
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+          <div uib-slide class="cursor" ng-click="showContent(1)" index="1">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <div class="round">
+                <img class="img-responsive" src="{% static 'clubs/imgs/icons/backpack.png' %}" />
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+              <div class="round-image-text">
+                <h3 class="text-muted">GOLD'S GYM STARTER PACK</h3>
+                <p class="text-muted">Start your fitness journey with complimentary gift and goodies from Gold's Gym.
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+          <div uib-slide class="cursor" ng-click="showContent(2)" index="2">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <div class="round">
+                <img class="img-responsive" src="{% static 'clubs/imgs/icons/personal_training_program.png' %}" />
+              </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+              <div class="round-image-text">
+                <h3 class="text-muted">PERSONAL TRAINING</h3>
+                <p class="text-muted">Our team of professionally certified Personal Trainers will help you achieve the results you've always wanted in the gym
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div uib-slide class="cursor" ng-click="showContent(3)" index="3">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <div class="round">
+                <img class="img-responsive" src="{% static 'clubs/imgs/icons/members.png' %}" />
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+              <div class="round-image-text">
+                <h3 class="text-muted">MEMBER PRIVILEGE PROGRAM</h3>
+                <p class="text-muted">Gold's Gym Member's get exclusive discount with partner resturant, shops, and stores.
+                  just present your membership card and enjoy additional benefits.
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div uib-slide class="cursor" ng-click="showContent(4)" index="4">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <div class="round">
+                <img class="img-responsive" src="{% static 'clubs/imgs/icons/fitness.png' %}" />
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+              <div class="round-image-text">
+                <h3 class="text-muted">FITNESS CAMPAIGN</h3>
+                <p class="text-muted">Are you raedy for a challenge? Gold's Gym Fitness Campaign rewards it's members for being active and achieving thier goals 
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+          <div uib-slide class="cursor" ng-click="showContent(5)" index="5">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <div class="round">
+                <img class="img-responsive" src="{% static 'clubs/imgs/icons/calendar.png' %}" />
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+              <div class="round-image-text">
+                <h3 class="text-muted">IN-CLUB EVENTS AND ANNIVERSARY</h3>
+                <p class="text-muted">Celebrate and embrace Fitness as your new lifestyle with our members-only and open to public events
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+          <div uib-slide class="cursor" ng-click="showContent(6)" index="6">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <div class="round">
+                <img class="img-responsive" src="{% static 'clubs/imgs/icons/epp.png' %}" />
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+              <div class="round-image-text">
+                <h3 class="text-muted">EASY PAYMENT PLAN AND CORPORATE DISCOUNTS</h3>
+                <p class="text-muted">Enjoy flexible payment options and exclusive rates for your Gold's Gym Membership
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row space">
+           <div class="col-md-12 col-sm-12 colxs-12 back-block">
+                <div class="col-md-3 pull-right">
+                    <span>Back</span><img ng-click="cityLocations()" class="img-responsive" src="{% static 'clubs/imgs/club/back.png' %}" />
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+</html>

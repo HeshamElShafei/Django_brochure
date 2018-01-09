@@ -1,0 +1,135 @@
+#backgroundimage
+{
+   height: 10%;
+   left: 0;
+   margin: 0;
+   min-height: 100%;
+   min-width: 674px;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
+}
+
+
+#club .club_name {
+  font-weight: bold;
+}
+
+#club .ggi-btn {
+  background-color: #fee300 !important;
+  color: #333333 !important;
+  font-weight: bold !important;
+  border: #fee300 !important;
+}
+
+#club .btn-blue {
+  background-color: #21ade7 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+    border: #21ade7 !important;
+    border-radius:2em !important;
+    padding: 1.5em;
+    text-align: center;
+    margin: 0.2em 0 0.2em 0;
+}
+
+#club .text1 {
+  color: #333333;
+  font-size: 4em;
+}
+
+#club .text2 {
+  font-weight: bold;
+  font-size: 5em;
+  color: #333333;
+}
+
+#club hr.style {
+  border-top: 2px solid #969595;
+}
+
+#club .gallery {
+  padding-top: 0.5em;
+    cursor: pointer;
+}
+
+#club .ggi-icons {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#club .responsive-img .ggi-icons {
+  margin: 0 auto !important;
+}
+
+#club .ggi-icons.equipment {
+  width: 50%;
+}
+
+#club .ggi-icons.unisex {
+  width: 45%;
+}
+
+#club .ggi-icons.shower {
+  width: 45%;
+}
+
+#club .ggi-icons.locker {
+  width: 60%;
+}
+
+#club .space {
+  margin-bottom: 1em !important;
+}
+
+#club .round {
+  padding: 1em;
+  width: 9em;
+    border: 0.3em solid #21ade7 !important;
+    border-radius: 10em !important;
+    -webkit-border-radius: 10em !important;
+    -moz-border-radius: 10em !important;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#club .round-image-text {
+    display: block;
+    margin-left: 1px;
+    padding: 1em;
+}
+
+#club .back-block span {
+    float: right;
+    vertical-align: middle;
+    display: inline-block;
+    font: 2.5em bold;
+}
+
+#club .back-block img {
+    float: right;
+    display: inline-block;
+    width: 2.9em;
+    cursor: pointer;
+}
+
+#club .slide-inline {
+    display: inline-block !important;
+}
+
+#club a {
+    color: #FFE900 !important;
+    background-color: none !important;
+}
+
+#club .carousel {
+    min-height: 14em !important;
+}
+
+#club .cursor {
+    cursor: pointer !important;
+}

@@ -15,4 +15,13 @@ def locations(request):
 def dubai(request):
 	return render(request, 'clubs/dubai.html')
 
+def albarshamixed(request):
+	return render(request, 'clubs/albarshamixed.html')
+
+def albarshamixedmembership(request):
+	return render(request, 'clubs/albarshamixed_membership.html')
+
+def albarshamixedoptions(request):
+	return render(request, 'clubs/albarshamixed_options.html')
+
 

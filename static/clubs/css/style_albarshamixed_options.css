@@ -1,0 +1,85 @@
+#backgroundimage
+{
+   height: 10%;
+   left: 0;
+   margin: 0;
+   min-height: 100%;
+   min-width: 674px;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
+}
+
+#membership-period .btn {
+    margin: 13px 12px 12px 10px;
+    background-color: #fee300 !important;
+    color: #333333 !important;
+    font-weight: bold !important;
+    border: #fee300 !important;
+    border-radius: 1em !important;
+    font-weight: bold;
+    padding: 1em;
+}
+
+#membership-period .btn-blue {
+  background-color: #21ade7 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+    border: #21ade7 !important;
+    text-align: center;
+    padding: 0.9em;
+}
+
+#membership-period .membership-periodBtnSpace {
+  background-color: #fee300 !important;
+  color: #333333 !important;
+  font-weight: bold !important;
+    border: #fee300 !important;
+    padding: 0.7em;
+    text-align: center;
+    margin: 0.2em 0 0.2em 0;
+}
+
+
+#membership-period .text1 {
+    font-weight: bold;
+  color: #21ade7;
+    font-size: 3em;
+}
+
+#membership-period .text2 {
+    font-size: 3em;
+  font-weight: bold;
+    color: #333333;
+}
+
+#membership-period .info-text {
+    font-size: 1.7em;
+    color: #636364;
+}
+
+#membership-period .info-text-bold {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#membership-period .space {
+    padding-bottom: 1.5em;
+}
+
+#membership-period .back-block span {
+    float: right;
+    vertical-align: middle;
+    display: inline-block;
+    font: 2.5em bold;
+}
+
+#membership-period .back-block img {
+    float: right;
+    vertical-align: middle;
+    display: inline-block;
+    width: 2.9em;
+    cursor: pointer;
+}

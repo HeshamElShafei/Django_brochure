@@ -1,0 +1,43 @@
+<html>
+{%load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>brochure_vue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="{% static 'clubs/css/style_albarshamixed_options.css'  %}"/>
+  </head>
+
+  <div id="membership-period">
+ <img id="backgroundimage" src="{% static 'clubs/imgs/membership/bg.png' %}" width=100% height=100%>
+  <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h1 class="text1">MEMBERSHIP</h1>
+        <h1 class="text2">OPTIONS</h1>  
+      </div>
+    </div>
+    <div class="row space">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <button class="btn btn-lg">HOME CLUB MEMBERSHIP</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <router-link to="/Registration"><button ng-click="registration()" class="btn btn-block btn-md btn-blue">MONTHLY</button></router-link>
+        <router-link to="/Registration"><button ng-click="registration()" class="btn btn-block btn-md btn-blue">4 MONTH</button></router-link>
+        <router-link to="/Registration"><button ng-click="registration()" class="btn btn-block btn-md btn-blue">12 MONTH</button></router-link>
+      </div>
+    </div>
+    <div class="row space">
+           <div class="col-md-12 col-md-12 col-xs-12 back-block">
+                <div class="col-md-8 pull-right">
+                    <span>Back</span><router-link to="/Membership"><img ng-click="membership()" class="img-responsive" src="{% static 'clubs/imgs/membership/back.png' %}" /></router-link>
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
