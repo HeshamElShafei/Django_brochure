@@ -1,0 +1,70 @@
+<html>
+{%load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>brochure_vue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="{% static 'clubs/css/style_registration.css'  %}"/>
+  </head>
+
+<div id="registration">
+ <img id="backgroundimage" src="{% static 'clubs/imgs/membership/bg.png' %}" width=100% height=100%>
+  <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
+    <div class="row">
+      <div class="col-md-10 col-sm-12 col-xs-12">
+        <h1 class="text1">REGISTER</h1>
+        <h2 class="text2">YOU ARE ONE STEP CLOSER TO BECOMING STRONGER</h2> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-sm-12 col-xs-12">
+          <form class = "form" data-toggle="validator" role="form" id="form" action="{% url 'regstore' %}" method="post">{% csrf_token %}
+          <input class="form" type="text" name="name" placeholder="FULL NAME">
+          <input class="form" type="number" name="number" placeholder="PHONE NUMBER">
+          <div class="select">
+            <select class="form-control" name="club_name">
+              <option value="Dubai AlBarsha Mall Mixed">DUBAI BARSHA MALL MIXED</option>
+              <option value="Reef Mall">REEF MALL</option>
+              <option value="Business Village Deira">BUSINESS VILLAGE DEIRA</option>
+            </select>
+          </div>
+          
+          
+          <div class="select">
+            <select class="form-control" name="membership">
+              <option value="Home membership">HOME MEMBERSHIP</option>
+              <option value="Cluster membership">CLUSTER MEMBERSHIP</option>
+              <option value="Passport membership">PASSPORT MEMBERSHIP</option>
+              <option value="Signature membership">SIGNATURE MEMBERSHIP</option>
+            </select>
+          </div>
+          <div class="select">
+            <select class="form-control" name="option">
+              <option value="Monthly">Monthly</option>
+              <option value="4 Months">4 Months</option>
+              <option value="12 Months">12 Months</option>
+            </select>
+          </div>
+      </div>
+    </div>
+
+    <div class="row space">
+           <div class="col-md-6 col-sm-12 col-xs-12">
+              <button class="btn btn-block btn-lg" ng-click="end()">SUBMIT</button>
+            </form>
+            </div>
+    </div>
+    <div class="row space">
+           <div class="col-md-12 col-sm-12 col-xs-12 back-block">
+                <div class="col-md-8 pull-right">
+                    <span>Back</span><router-link to="/Options"><img click="membershipPeriod()" class="img-responsive" src="../assets/membership/back.png" /></router-link>
+                </div>
+            </div>
+    </div>
+  </div>
+</div>

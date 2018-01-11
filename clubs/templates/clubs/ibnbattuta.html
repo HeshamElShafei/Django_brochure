@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="{% static 'clubs/css/style_albarshamixed.css'  %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'clubs/css/style_albattuta.css'  %}"/>
   </head>
 
 <div id="club">
@@ -16,7 +16,7 @@
   <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
     <div class="row space">
       <div class="col-md-6 col-sm-6 col-xs-12">
-        <h1 class="club_name">AL BARSHA MALL</h1>
+        <h1 class="club_name">IBN BATTUTA GATE</h1>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="col-md-3 col-sm-12 col-xs-6">
@@ -42,76 +42,62 @@
         <h2>FACILITIES FEATURES</h2>
       </div>
     </div>
-    <div class="row space">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div uib-carousel class="carousel" active="featuresSlides.active" interval="myInterval" no-wrap="noWrapSlides">
-          <div uib-slide index="0">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/digital_solutions.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Complete Digital Fitness Solution</p> 
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/mixed_gym.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Mixed Gym</p> 
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/ladies_only.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Ladies only facility</p>  
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/shower_room.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Shower Room</p> 
-            </div>
-          </div>
-          <div uib-slide index="1">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/locker_access.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Locker Access</p> 
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/free_weights.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Free Weights</p>  
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/cardio_area.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Cardio Area</p> 
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/cycle_studio.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Cycle Studio</p>  
-            </div>
-          </div>
-          <div uib-slide index="2">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/group_exercise.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Group Exercise Studio</p> 
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/boxing_mma.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Boxing / MMA</p>  
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/sauna_room.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Sauna</p> 
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/juice_bar.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Juice Bar</p> 
-            </div>
-          </div>
-          <div uib-slide index="3">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/unlimited_gx_classes.png' style="margin:auto;">
-              <p class="text-muted text-center">Unlimited GX Classes</p>  
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <img class="img-responsive" src="{% static 'clubs/imgs/icons/personal_training.png' %}" style="margin:auto;">
-              <p class="text-muted text-center">Personal Training</p> 
-            </div>
-          </div>
-        </div>
+    
+       <div id="mycarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#mycarousel" data-slide-to="1"></li>
+    <li data-target="#mycarousel" data-slide-to="2"></li>
+    <li data-target="#mycarousel" data-slide-to="3"></li>
+    <li data-target="#mycarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" style="background-color:black">
+    <div class="item active" style="background-color:black">
+      <img src="{% static 'clubs/imgs/icons/digital_solutions.png' %}" height = "350" width = "350" class = "img-responsive" alt="Complete Digital Fitness Solution" align ="center" style = "margin: 10px 150px">
+      <div class="carousel-caption">
+        <h3>Digital Fitness Solution</h3>
       </div>
     </div>
+    <div class="item" style="background-color:black">
+      <img src="{% static 'clubs/imgs/icons/mixed_gym.png' %}"  height = "350" width = "350" class = "img-responsive" alt="Mixed Gym" align ="center" style = "margin: 10px 150px">
+      <div class="carousel-caption">
+        <h3>Mixed Gym</h3>
+      </div>
+    </div>
+    <div class="item" style="background-color:black">
+      <img src="{% static 'clubs/imgs/icons/ladies_only.png' %}"  height = "350" width = "350" class = "img-responsive" alt="Mixed Gym" align ="center" style = "margin: 10px 150px">
+      <div class="carousel-caption">
+        <h3>Ladies Only Facility</h3>
+      </div>
+    </div>
+    <div class="item" style="background-color:black">
+      <img src="{% static 'clubs/imgs/icons/shower_room.png' %}"  height = "350" width = "350" class = "img-responsive" alt="Mixed Gym" align ="center" style = "margin: 10px 150px">
+      <div class="carousel-caption">
+        <h3>Shower room</h3>
+      </div>
+    </div>
+    <div class="item" style="background-color:black">
+      <img src="{% static 'clubs/imgs/icons/locker_access.png' %}"  height = "350" width = "350" class = "img-responsive" alt="Mixed Gym" align ="center" style = "margin: 10px 150px">
+      <div class="carousel-caption">
+        <h3>Locker access</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   
     <hr class="style" />
     <div class="row space">
       <div class="col-md-12 col-sm-12 col-xs-12">

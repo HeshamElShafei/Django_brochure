@@ -134,3 +134,10 @@
 #club .cursor {
     cursor: pointer !important;
 }
+
+
+.p {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 13px;
+}
