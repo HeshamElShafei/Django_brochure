@@ -34,6 +34,6 @@ requests==2.11.1
 rsa==3.4.2
 s3transfer==0.1.10
 six==1.10.0
-urllib3==1.7.1
+urllib3==1.26.5
 virtualenv==15.0.3
 whitenoise==3.2.2
